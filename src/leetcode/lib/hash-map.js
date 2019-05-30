@@ -1,29 +1,27 @@
-let map = null;
-
 class HasMap {
   constructor(keyGen) {
-    map = Object.create(null);
+    this.map = Object.create(null);
   }
 
   add(key, value) {
-    map[key] = value;
+    this.map[key] = value;
     return value;
   }
 
   remove(key) {
     if (this.contains(key)) {
-      delete map[key];
+      delete this.map[key];
       return key;
     }
     return null;
   }
 
   get(key) {
-    return this.contains(key) ? map[key] : null;
+    return this.contains(key) ? this.map[key] : null;
   }
 
   contains(key) {
-    return map[key] !== undefined;
+    return this.map[key] !== undefined;
   }
 }
 

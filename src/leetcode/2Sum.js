@@ -43,4 +43,25 @@ var twoSum = function(nums, target) {
   return -1;
 };
 
+// //approch2 with lib HasMap
+const HashMap = require("./lib/hash-map");
+
+var twoSum = function(nums, target) {
+  let i;
+  if (nums.length < 2) {
+    return -1;
+  }
+
+  let map = new HashMap(),
+    complement;
+
+  for (i = 0; i < nums.length; i++) {
+    complement = target - nums[i];
+    if (map.contains(complement)) {
+      return [map.get(complement), i];
+    }
+    map.add(nums[i], i);
+  }
+  return -1;
+};
 module.exports = twoSum;

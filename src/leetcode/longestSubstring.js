@@ -27,17 +27,4 @@ const longestUniqueSubString = function (inputString) {
     return inputString.substr(startIndex, maxLength);
 }
 
-let substr = longestUniqueSubString("GEEKSFORGEEKS");
-console.log(substr);
-substr = longestUniqueSubString("ABDEFGABEF");
-console.log(substr);
-substr = longestUniqueSubString("ABCADAEFGH");
-console.log(substr);
-substr = longestUniqueSubString("ABCABCDA");
-console.log(substr);
-
-substr = longestUniqueSubString("abcabcbb");
-console.log(substr);
-
-substr = longestUniqueSubString("abcdebafdgh");
-console.log(substr);
+module.exports = longestUniqueSubString;

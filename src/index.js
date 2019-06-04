@@ -39,7 +39,7 @@
 // console.log(substr);
 
 const quickSort = require("./leetcode/quicksort");
-var a = [5864,-12333,4151,-6239,-10306,10866,-7013,13195,-8855,1150,-560,3227]
+var a = [2,56,12,34,21,56,78,98,98,32,45,77]
 quickSort(a);
 console.log(a)
 

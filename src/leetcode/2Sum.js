@@ -48,9 +48,9 @@ const HashMap = require("./lib/hash-map");
 
 var twoSum = function(nums, target) {
   let i;
-  if (nums.length < 2) {
-    return -1;
-  }
+    if (nums.length < 2) {
+      return -1;
+    }
 
   let map = new HashMap(),
     complement;

@@ -43,10 +43,27 @@
 // quickSort(a);
 // console.log(a)
 
+// const SLL = require("./leetcode/lib/linked-list/single-linked-list");
+// //const removeNthFromEnd = require("./leetcode/RemoveNthFromEnd_19");
+//  const removeNthFromEnd = require("./leetcode/RemoveNthFromEnd_SlowFast");
+// let sll = new SLL([1,2,3,4,5]);
+// sll.print();
+// sll.datalist = removeNthFromEnd(sll.datalist, 2);
+// sll.print();
+
+
+
+// const SLL = require("./leetcode/lib/linked-list/single-linked-list");
+// const middleNode = require("./leetcode/MiddleOfLL_SlowFast_876");
+// let sll = new SLL([1,2,3,4,5,6,7,8,9]);
+// sll.print();
+// let node = middleNode(sll.datalist);
+// console.log(node);
+
 const SLL = require("./leetcode/lib/linked-list/single-linked-list");
-//const removeNthFromEnd = require("./leetcode/RemoveNthFromEnd_19");
-const removeNthFromEnd = require("./leetcode/RemoveNthFromEnd_SlowFast");
-let sll = new SLL([1,2,3,4,5]);
+const reverseLinkedList = require("./leetcode/ReverseLinkedList_206");
+let sll = new SLL([1,2]);
 sll.print();
-sll.datalist = removeNthFromEnd(sll.datalist, 2);
+sll.datalist = reverseLinkedList(sll.datalist);
 sll.print();
+

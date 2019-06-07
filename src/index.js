@@ -44,8 +44,9 @@
 // console.log(a)
 
 const SLL = require("./leetcode/lib/linked-list/single-linked-list");
-const removeNthFromEnd = require("./leetcode/RemoveNthFromEnd_19");
+//const removeNthFromEnd = require("./leetcode/RemoveNthFromEnd_19");
+const removeNthFromEnd = require("./leetcode/RemoveNthFromEnd_SlowFast");
 let sll = new SLL([1,2,3,4,5]);
 sll.print();
-sll.datalist = removeNthFromEnd(sll.datalist, 4);
+sll.datalist = removeNthFromEnd(sll.datalist, 2);
 sll.print();

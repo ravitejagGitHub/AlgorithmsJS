@@ -68,10 +68,14 @@
 // sll.print();
 
 
-const SLL = require("./leetcode/lib/linked-list/single-linked-list");
-const hasCycleLL = require("./leetcode/hasCycleLL_141");
-let sll = new SLL([1,2,3,4,5,6,7]);
-let lastNode = sll.lastNode();
-    lastNode.next = sll.datalist.next.next.next;
-let hasCycle = hasCycleLL(sll.datalist);
-console.log(hasCycle)
+// const SLL = require("./leetcode/lib/linked-list/single-linked-list");
+// const hasCycleLL = require("./leetcode/hasCycleLL_141");
+// let sll = new SLL([1,2,3,4,5,6,7]);
+// let lastNode = sll.lastNode();
+//     lastNode.next = sll.datalist.next.next.next;
+// let hasCycle = hasCycleLL(sll.datalist);
+// console.log(hasCycle)
+
+const plusOne = require("./leetcode/PlusOne_66");
+let result = plusOne([2,9,9]);
+console.log(result);

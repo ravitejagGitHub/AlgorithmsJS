@@ -80,11 +80,34 @@
 // let result = plusOne([2,9,9]);
 // console.log(result);
 
-const SLL = require("./leetcode/lib/linked-list/single-linked-list");
-let sl1 = new SLL([1,5,10,15,20,25]);
-let sl2 = new SLL([2,4,9,20]);
-sl1.print();
-sl2.print();
-const mergetTwoLists = require("./leetcode/MergeTwoList_21");
-sl1.datalist = mergetTwoLists(sl1.datalist, sl2.datalist);
-sl1.print();
+// const SLL = require("./leetcode/lib/linked-list/single-linked-list");
+// let sl1 = new SLL([1,5,10,15,20,25]);
+// let sl2 = new SLL([2,4,9,20]);
+// sl1.print();
+// sl2.print();
+// const mergetTwoLists = require("./leetcode/MergeTwoList_21");
+// sl1.datalist = mergetTwoLists(sl1.datalist, sl2.datalist);
+// sl1.print();
+
+const Graph  = require("./leetcode/lib/graph/Graph");
+let g =  new Graph(6);
+
+var vertices = [ 'A', 'B', 'C', 'D', 'E', 'F' ]; 
+  
+// adding vertices 
+for (var i = 0; i < vertices.length; i++) { 
+    g.addVertex(vertices[i]); 
+} 
+  
+// adding edges 
+g.addEdge('A', 'B'); 
+g.addEdge('A', 'D'); 
+g.addEdge('A', 'E'); 
+g.addEdge('B', 'C'); 
+g.addEdge('D', 'E'); 
+g.addEdge('E', 'F'); 
+g.addEdge('E', 'C'); 
+g.addEdge('C', 'F'); 
+  
+// prints all vertex and  its adjacency list
+g.printGraph();

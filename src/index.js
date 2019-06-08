@@ -76,6 +76,15 @@
 // let hasCycle = hasCycleLL(sll.datalist);
 // console.log(hasCycle)
 
-const plusOne = require("./leetcode/PlusOne_66");
-let result = plusOne([2,9,9]);
-console.log(result);
+// const plusOne = require("./leetcode/PlusOne_66");
+// let result = plusOne([2,9,9]);
+// console.log(result);
+
+const SLL = require("./leetcode/lib/linked-list/single-linked-list");
+let sl1 = new SLL([1,5,10,15,20,25]);
+let sl2 = new SLL([2,4,9,20]);
+sl1.print();
+sl2.print();
+const mergetTwoLists = require("./leetcode/MergeTwoList_21");
+sl1.datalist = mergetTwoLists(sl1.datalist, sl2.datalist);
+sl1.print();

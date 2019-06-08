@@ -1,5 +1,3 @@
-const Node = require("./lib/linked-list/node");
-
 const reverseList = function(head, prevNode = null) {
   if (head === null) {
     return prevNode;

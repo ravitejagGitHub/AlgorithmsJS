@@ -60,10 +60,18 @@
 // let node = middleNode(sll.datalist);
 // console.log(node);
 
-const SLL = require("./leetcode/lib/linked-list/single-linked-list");
-const reverseLinkedList = require("./leetcode/ReverseLinkedList_206");
-let sll = new SLL([1,2]);
-sll.print();
-sll.datalist = reverseLinkedList(sll.datalist);
-sll.print();
+// const SLL = require("./leetcode/lib/linked-list/single-linked-list");
+// const reverseLinkedList = require("./leetcode/ReverseLinkedList_206");
+// let sll = new SLL([1,2]);
+// sll.print();
+// sll.datalist = reverseLinkedList(sll.datalist);
+// sll.print();
 
+
+const SLL = require("./leetcode/lib/linked-list/single-linked-list");
+const hasCycleLL = require("./leetcode/hasCycleLL_141");
+let sll = new SLL([1,2,3,4,5,6,7]);
+let lastNode = sll.lastNode();
+    lastNode.next = sll.datalist.next.next.next;
+let hasCycle = hasCycleLL(sll.datalist);
+console.log(hasCycle)

@@ -30,5 +30,13 @@ class LinkedList {
   print() {
     console.log(print(this.datalist));
   }
+
+  lastNode() {
+    let n = this.datalist;
+    while (n.next !== null) {
+      n = n.next;
+    }
+    return n;
+  }
 }
 module.exports = LinkedList;

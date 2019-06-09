@@ -173,4 +173,4 @@ g.addEdge(8,9);
 // prints all vertex and  its adjacency list
 g.printGraph();
 
-console.log(topologicalSort(g));
+console.log(topologicalSort(g).join("->"));

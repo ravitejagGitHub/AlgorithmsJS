@@ -15,12 +15,11 @@ const topologicalSort = function(graph) {
   let visitedVertices = new Map();
   let allVertices = graph.getAllVertices();
   allVertices.forEach((adjecentVerices, vertix, map) => {
-    if (!visitedVertices.has(vertix)) {
-      //not visited
+    if (!visitedVertices.has(vertix)) { //not visited
       travelAdjusentVertices(graph, vertix, stack, visitedVertices);
     }
   });
-  return stack.reverse().join("->");
+  return stack.reverse();
 };
 
 module.exports = topologicalSort;

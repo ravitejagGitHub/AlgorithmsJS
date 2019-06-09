@@ -1,7 +1,8 @@
 class Graph {
-  constructor(noOfVertices) {
+  constructor(noOfVertices, isUndirectedGraph = false) {
     this.noOfVertices = noOfVertices;
     this.adjList = new Map(); //Adjusent vertices list
+    this.isUndirectedGraph = isUndirectedGraph; 
   }
 
   /**
@@ -21,8 +22,10 @@ class Graph {
   addEdge(v, w) {
     // get the list for vertex v and put the vertex w denoting edge between v and w
     this.adjList.get(v).push(w);
-    // Since graph is undirected, add an edge from w to v also
-    this.adjList.get(w).push(v);
+    if(this.isUndirectedGraph) {
+        // Since graph is undirected, add an edge from w to v also
+        this.adjList.get(w).push(v);
+    }
   }
 
    /**

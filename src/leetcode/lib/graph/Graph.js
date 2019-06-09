@@ -43,6 +43,21 @@ class Graph {
       console.log(i + " => " + get_values.join(" "));
     }
   }
+
+  /**
+   * Get all vertices in graph
+   */
+  getAllVertices(){
+      return this.adjList;
+  }
+
+  /**
+   * * Get all adjucent vertices of given vertix in graph
+   * @param {any} vertix  vertix in graph
+   */
+  getAdjecentVertices(vertix) {
+    return this.adjList.get(vertix);
+  }
 }
 
 module.exports = Graph;

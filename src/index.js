@@ -13,7 +13,6 @@
 // console.log(dll1.print('desc'));
 // console.log(dll2.print());
 
-
 // const addTwoNumbers = require("./leetcode/AddTwoNumbers");
 // const SLL = require("./leetcode/lib/linked-list/single-linked-list");
 //  let l1 = SLL([2,4,3]);
@@ -51,8 +50,6 @@
 // sll.datalist = removeNthFromEnd(sll.datalist, 2);
 // sll.print();
 
-
-
 // const SLL = require("./leetcode/lib/linked-list/single-linked-list");
 // const middleNode = require("./leetcode/MiddleOfLL_SlowFast_876");
 // let sll = new SLL([1,2,3,4,5,6,7,8,9]);
@@ -66,7 +63,6 @@
 // sll.print();
 // sll.datalist = reverseLinkedList(sll.datalist);
 // sll.print();
-
 
 // const SLL = require("./leetcode/lib/linked-list/single-linked-list");
 // const hasCycleLL = require("./leetcode/hasCycleLL_141");
@@ -89,43 +85,92 @@
 // sl1.datalist = mergetTwoLists(sl1.datalist, sl2.datalist);
 // sl1.print();
 
-const Graph  = require("./leetcode/lib/graph/Graph");
-let g =  new Graph(6);//directed graph
+// const Graph  = require("./leetcode/lib/graph/Graph");
+// let g =  new Graph(6);//directed graph
 
-var vertices = [ 'A', 'B', 'C', 'D', 'E', 'F' ]; 
-// adding vertices 
-for (var i = 0; i < vertices.length; i++) { 
-    g.addVertex(vertices[i]); 
-} 
-// adding edges 
-g.addEdge('A', 'B'); 
-g.addEdge('A', 'D'); 
-g.addEdge('A', 'E'); 
-g.addEdge('B', 'C'); 
-g.addEdge('D', 'E'); 
-g.addEdge('E', 'F'); 
-g.addEdge('E', 'C'); 
-g.addEdge('C', 'F'); 
-  
+// var vertices = [ 'A', 'B', 'C', 'D', 'E', 'F' ];
+// // adding vertices
+// for (var i = 0; i < vertices.length; i++) {
+//     g.addVertex(vertices[i]);
+// }
+// // adding edges
+// g.addEdge('A', 'B');
+// g.addEdge('A', 'D');
+// g.addEdge('A', 'E');
+// g.addEdge('B', 'C');
+// g.addEdge('D', 'E');
+// g.addEdge('E', 'F');
+// g.addEdge('E', 'C');
+// g.addEdge('C', 'F');
+
+// // prints all vertex and  its adjacency list
+// g.printGraph();
+
+// g =  new Graph(6, true); //undirected graph
+
+// var vertices = [ 'A', 'B', 'C', 'D', 'E', 'F' ];
+// // adding vertices
+// for (var i = 0; i < vertices.length; i++) {
+//     g.addVertex(vertices[i]);
+// }
+// // adding edges
+// g.addEdge('A', 'B');
+// g.addEdge('A', 'D');
+// g.addEdge('A', 'E');
+// g.addEdge('B', 'C');
+// g.addEdge('D', 'E');
+// g.addEdge('E', 'F');
+// g.addEdge('E', 'C');
+// g.addEdge('C', 'F');
+
+// // prints all vertex and  its adjacency list
+// g.printGraph();
+// console.log(g.getAdjecentVertices(vertices[0]));
+// console.log(g.getAllVertices());
+
+const Graph = require("./leetcode/lib/graph/Graph");
+let g = new Graph(6); //directed graph
+
+var vertices = ["A", "B", "C", "D", "E", "F", "G"];
+// adding vertices
+for (var i = 0; i < vertices.length; i++) {
+  g.addVertex(vertices[i]);
+}
+// adding edges
+g.addEdge("A", "C");
+g.addEdge("B", "C");
+g.addEdge("B", "E");
+g.addEdge("C", "D");
+g.addEdge("E", "F");
+g.addEdge("D", "F");
+g.addEdge("F", "G");
+
 // prints all vertex and  its adjacency list
 g.printGraph();
 
-g =  new Graph(6, true); //undirected graph
+const topologicalSort = require("./leetcode/topologicalSort");
+console.log(topologicalSort(g));
 
-var vertices = [ 'A', 'B', 'C', 'D', 'E', 'F' ]; 
-// adding vertices 
-for (var i = 0; i < vertices.length; i++) { 
-    g.addVertex(vertices[i]); 
-} 
-// adding edges 
-g.addEdge('A', 'B'); 
-g.addEdge('A', 'D'); 
-g.addEdge('A', 'E'); 
-g.addEdge('B', 'C'); 
-g.addEdge('D', 'E'); 
-g.addEdge('E', 'F'); 
-g.addEdge('E', 'C'); 
-g.addEdge('C', 'F'); 
-  
+//test 22
+g = new Graph(8); //directed graph
+
+var vertices = [5, 7, 3, 11, 8, 2, 9, 10];
+// adding vertices
+for (var i = 0; i < vertices.length; i++) {
+  g.addVertex(vertices[i]);
+}
+// adding edges
+g.addEdge(5,11);
+g.addEdge(7,11);
+g.addEdge(7, 8);
+g.addEdge(3,8);
+g.addEdge(3,10);
+g.addEdge(11,9);
+g.addEdge(11,2);
+g.addEdge(11,10);
+g.addEdge(8,9);
+
 // prints all vertex and  its adjacency list
 g.printGraph();
+
+console.log(topologicalSort(g));

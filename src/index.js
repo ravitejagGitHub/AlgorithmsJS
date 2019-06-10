@@ -128,49 +128,53 @@
 // console.log(g.getAdjecentVertices(vertices[0]));
 // console.log(g.getAllVertices());
 
-const Graph = require("./leetcode/lib/graph/Graph");
-let g = new Graph(6); //directed graph
+// const Graph = require("./leetcode/lib/graph/Graph");
+// let g = new Graph(6); //directed graph
 
-var vertices = ["A", "B", "C", "D", "E", "F", "G"];
-// adding vertices
-for (var i = 0; i < vertices.length; i++) {
-  g.addVertex(vertices[i]);
-}
-// adding edges
-g.addEdge("A", "C");
-g.addEdge("B", "C");
-g.addEdge("B", "E");
-g.addEdge("C", "D");
-g.addEdge("E", "F");
-g.addEdge("D", "F");
-g.addEdge("F", "G");
+// var vertices = ["A", "B", "C", "D", "E", "F", "G"];
+// // adding vertices
+// for (var i = 0; i < vertices.length; i++) {
+//   g.addVertex(vertices[i]);
+// }
+// // adding edges
+// g.addEdge("A", "C");
+// g.addEdge("B", "C");
+// g.addEdge("B", "E");
+// g.addEdge("C", "D");
+// g.addEdge("E", "F");
+// g.addEdge("D", "F");
+// g.addEdge("F", "G");
 
-// prints all vertex and  its adjacency list
-g.printGraph();
+// // prints all vertex and  its adjacency list
+// g.printGraph();
 
-const topologicalSort = require("./leetcode/topologicalSort");
-console.log(topologicalSort(g));
+// const topologicalSort = require("./leetcode/topologicalSort");
+// console.log(topologicalSort(g));
 
-//test 22
-g = new Graph(8); //directed graph
+// //test 22
+// g = new Graph(8); //directed graph
 
-var vertices = [5, 7, 3, 11, 8, 2, 9, 10];
-// adding vertices
-for (var i = 0; i < vertices.length; i++) {
-  g.addVertex(vertices[i]);
-}
-// adding edges
-g.addEdge(5,11);
-g.addEdge(7,11);
-g.addEdge(7, 8);
-g.addEdge(3,8);
-g.addEdge(3,10);
-g.addEdge(11,9);
-g.addEdge(11,2);
-g.addEdge(11,10);
-g.addEdge(8,9);
+// var vertices = [5, 7, 3, 11, 8, 2, 9, 10];
+// // adding vertices
+// for (var i = 0; i < vertices.length; i++) {
+//   g.addVertex(vertices[i]);
+// }
+// // adding edges
+// g.addEdge(5,11);
+// g.addEdge(7,11);
+// g.addEdge(7, 8);
+// g.addEdge(3,8);
+// g.addEdge(3,10);
+// g.addEdge(11,9);
+// g.addEdge(11,2);
+// g.addEdge(11,10);
+// g.addEdge(8,9);
 
-// prints all vertex and  its adjacency list
-g.printGraph();
+// // prints all vertex and  its adjacency list
+// g.printGraph();
 
-console.log(topologicalSort(g).join("->"));
+// console.log(topologicalSort(g).join("->"));
+
+const groupAnagrams = require("./leetcode/GroupAnangram");
+let result = groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
+console.log(result);

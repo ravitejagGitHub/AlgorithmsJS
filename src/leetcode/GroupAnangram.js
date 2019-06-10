@@ -28,7 +28,7 @@ var groupAnagrams = function(strs) {
       hasMap.set(tmpStr, [str]);
     }
   });
-  hasMap.forEach(value => result.push(value))
+  hasMap.forEach(value => result.push(value)); // concat all values.
   return result;
 };
 

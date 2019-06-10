@@ -179,5 +179,14 @@
 // let result = groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
 // console.log(result);
 
-const LargestNumber = require("./leetcode/LargestNumberFormedFromArrayElements");
-console.log(LargestNumber(["98", "95", "889", "99996", "9","99","991"]))
+
+// const LargestNumber = require("./leetcode/LargestNumberFormedFromArrayElements");
+// console.log(LargestNumber(["98", "95", "889", "99996", "9","99","991"]));
+
+const SLL = require("./leetcode/lib/linked-list/single-linked-list");
+const isPalindrome =  require("./leetcode/isPalindromeLL_234");
+let sll = new SLL([2]);
+console.log(sll.print());
+let isP = isPalindrome(sll.datalist);
+console.log(isP);
+

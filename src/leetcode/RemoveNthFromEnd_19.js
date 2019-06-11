@@ -28,6 +28,7 @@ const removeNthFromEnd = function(head, n) {
       delete temp;
     }
   }
+  
   return head;
 };
 

@@ -183,10 +183,25 @@
 // const LargestNumber = require("./leetcode/LargestNumberFormedFromArrayElements");
 // console.log(LargestNumber(["98", "95", "889", "99996", "9","99","991"]));
 
-const SLL = require("./leetcode/lib/linked-list/single-linked-list");
-const isPalindrome =  require("./leetcode/isPalindromeLL_234");
-let sll = new SLL([2]);
-console.log(sll.print());
-let isP = isPalindrome(sll.datalist);
-console.log(isP);
+// const SLL = require("./leetcode/lib/linked-list/single-linked-list");
+// const isPalindrome =  require("./leetcode/isPalindromeLL_234");
+// let sll = new SLL([2]);
+// console.log(sll.print());
+// let isP = isPalindrome(sll.datalist);
+// console.log(isP);
 
+
+//Tree Traversal - Pre Order.
+const TreeNode = require("./leetcode/lib/Tree/TreeNode");
+let root = new TreeNode(1);
+root.left = new TreeNode(2);
+root.left.left = new TreeNode(4);
+root.left.right = new TreeNode(5);
+root.right = new TreeNode(3);
+root.right.left = new TreeNode(6);
+
+const InOrder = require("./leetcode/TreeTraversalsInOrder_94");
+let order = InOrder.inorderTraversal(root);
+console.log(order.join("->"));
+order = InOrder.inOrderRecursive(root);
+console.log(order.join("->"));

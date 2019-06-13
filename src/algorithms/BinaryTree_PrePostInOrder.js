@@ -51,3 +51,4 @@ function main() {
     postOrder(tree);
 }
 
+main();

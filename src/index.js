@@ -190,8 +190,8 @@
 // let isP = isPalindrome(sll.datalist);
 // console.log(isP);
 
-
-//Tree Traversal - Pre Order.
+//-------------------------------- Tree ------------------------------------------
+//Tree Traversal - 
 const TreeNode = require("./leetcode/lib/Tree/TreeNode");
 let root = new TreeNode(1);
 root.left = new TreeNode(2);
@@ -200,8 +200,17 @@ root.left.right = new TreeNode(5);
 root.right = new TreeNode(3);
 root.right.left = new TreeNode(6);
 
-const InOrder = require("./leetcode/TreeTraversalsInOrder_94");
-let order = InOrder.inorderTraversal(root);
+//Pre Order.
+// const InOrder = require("./leetcode/TreeTraversalsInOrder_94");
+// let order = InOrder.inorderTraversal(root);
+// console.log(order.join("->"));
+// order = InOrder.inOrderRecursive(root);
+// console.log(order.join("->"));
+
+
+//InOrder
+const PreOrder = require("./leetcode/TreeTraversalsPreOrder_144");
+let order = PreOrder.preOrderTraversal(root);
 console.log(order.join("->"));
-order = InOrder.inOrderRecursive(root);
+order = PreOrder.preOrderRecursive(root);
 console.log(order.join("->"));

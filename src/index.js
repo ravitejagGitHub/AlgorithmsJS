@@ -197,8 +197,11 @@ let root = new TreeNode(1);
 root.left = new TreeNode(2);
 root.left.left = new TreeNode(4);
 root.left.right = new TreeNode(5);
+root.left.right.left = new TreeNode(8);
+root.left.right.right = new TreeNode(9);
 root.right = new TreeNode(3);
 root.right.left = new TreeNode(6);
+root.right.left.right = new TreeNode(7);
 
 //Pre Order.
 // const InOrder = require("./leetcode/TreeTraversalsInOrder_94");
@@ -227,7 +230,11 @@ root.right.left = new TreeNode(6);
 
 
 //level order
-const LevelOrder = require("./leetcode/TreeTraversalLevelOrder_102");
-let order = LevelOrder(root);
+// const LevelOrder = require("./leetcode/TreeTraversalLevelOrder_102");
+// let order = LevelOrder(root);
+// console.log(order);
 
+//zig zag level order
+const zigZagLevelOrder = require("./leetcode/TreeTraversalZigZagOrder_103");
+let order = zigZagLevelOrder(root);
 console.log(order);

@@ -9,10 +9,11 @@ Input:
 Output:
 [
   [3],
-  [9,20],
+  [20,9],
   [15,7]
 ]
 */ 
+
 
 /**
  * @param {TreeNode} root
@@ -20,15 +21,14 @@ Output:
  */
 const levelOrder = function(root) {
   let levelOrderArr = [],
-    stack = [];
+    stack = [] ;
   let curr_node = root;
   if(root === null)   {
     return [];
   }
   stack.push(curr_node);
   while (stack.length !== 0) {
-    let childNodes = [],
-      i = 0;
+    let childNodes = [],i =0;
     while (i < stack.length) {
       curr_node = stack[i];
       if (curr_node.left !== null) {
@@ -40,6 +40,8 @@ const levelOrder = function(root) {
       i++;
     }
     if (stack.length > 0) {
+      let evenLevel = levelOrderArr.length % 2 === 0 ? true: false;
+      stack = evenLevel ? stack : stack.reverse();
       levelOrderArr.push(stack.map(node=>node.val));
     }
     stack = childNodes;

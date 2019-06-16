@@ -217,10 +217,17 @@ root.right.left = new TreeNode(6);
 
 
 //postOrder
-const PostOrder = require("./leetcode/TreeTraversalsPostOrder_145");
-let order = PostOrder.postOrderTraversal(root);
-console.log(order.join("->"));
-order = PostOrder.postOrderRecursive(root);
-console.log(order.join("->"));
-order = PostOrder.postOrderUsingWithQueue(root);
-console.log(order.join("->"));
+// const PostOrder = require("./leetcode/TreeTraversalsPostOrder_145");
+// let order = PostOrder.postOrderTraversal(root);
+// console.log(order.join("->"));
+// order = PostOrder.postOrderRecursive(root);
+// console.log(order.join("->"));
+// order = PostOrder.postOrderUsingWithQueue(root);
+// console.log(order.join("->"));
+
+
+//level order
+const LevelOrder = require("./leetcode/TreeTraversalLevelOrder_102");
+let order = LevelOrder(root);
+
+console.log(order);

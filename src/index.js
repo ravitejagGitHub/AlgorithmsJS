@@ -208,9 +208,19 @@ root.right.left = new TreeNode(6);
 // console.log(order.join("->"));
 
 
-//InOrder
-const PreOrder = require("./leetcode/TreeTraversalsPreOrder_144");
-let order = PreOrder.preOrderTraversal(root);
+// //InOrder
+// const PreOrder = require("./leetcode/TreeTraversalsPreOrder_144");
+// let order = PreOrder.preOrderTraversal(root);
+// console.log(order.join("->"));
+// order = PreOrder.preOrderRecursive(root);
+// console.log(order.join("->"));
+
+
+//postOrder
+const PostOrder = require("./leetcode/TreeTraversalsPostOrder_145");
+let order = PostOrder.postOrderTraversal(root);
 console.log(order.join("->"));
-order = PreOrder.preOrderRecursive(root);
+order = PostOrder.postOrderRecursive(root);
+console.log(order.join("->"));
+order = PostOrder.postOrderUsingWithQueue(root);
 console.log(order.join("->"));

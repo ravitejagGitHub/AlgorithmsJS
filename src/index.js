@@ -203,6 +203,7 @@ root.right = new TreeNode(3);
 root.right.left = new TreeNode(6);
 root.right.left.right = new TreeNode(7);
 
+
 //Pre Order.
 // const InOrder = require("./leetcode/TreeTraversalsInOrder_94");
 // let order = InOrder.inorderTraversal(root);
@@ -235,6 +236,10 @@ root.right.left.right = new TreeNode(7);
 // console.log(order);
 
 //zig zag level order
-const zigZagLevelOrder = require("./leetcode/TreeTraversalZigZagOrder_103");
-let order = zigZagLevelOrder(root);
-console.log(order);
+// const zigZagLevelOrder = require("./leetcode/TreeTraversalZigZagOrder_103");
+// let order = zigZagLevelOrder(root);
+// console.log(order);
+
+const maxDepth = require("./leetcode/TreeMaxDepth_104");
+console.log(`Max Depth : ${maxDepth.maxDepthRecurrsive(root)}`);
+console.log(`Max Depth : ${maxDepth.maxDepthIterative(root)}`);

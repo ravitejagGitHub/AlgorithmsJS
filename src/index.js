@@ -192,6 +192,16 @@
 
 //-------------------------------- Tree ------------------------------------------
 //Tree Traversal - 
+/*
+            1
+        /       \
+       2          3
+      / \       / 
+    4     5    6
+        /   \   \
+       8      9   7
+
+*/
 const TreeNode = require("./leetcode/lib/Tree/TreeNode");
 let root = new TreeNode(1);
 root.left = new TreeNode(2);
@@ -240,6 +250,13 @@ root.right.left.right = new TreeNode(7);
 // let order = zigZagLevelOrder(root);
 // console.log(order);
 
-const maxDepth = require("./leetcode/TreeMaxDepth_104");
-console.log(`Max Depth : ${maxDepth.maxDepthRecurrsive(root)}`);
-console.log(`Max Depth : ${maxDepth.maxDepthIterative(root)}`);
+// Max Depth
+// const maxDepth = require("./leetcode/TreeMaxDepth_104");
+// console.log(`Max Depth : ${maxDepth.maxDepthRecurrsive(root)}`);
+// console.log(`Max Depth : ${maxDepth.maxDepthIterative(root)}`);
+
+
+// Min Depth
+const minDepth = require("./leetcode/TreeMinDepth_111");
+console.log(`Min Depth : ${minDepth.minDepthRecurrsive(root)}`);
+console.log(`Min Depth : ${minDepth.minDepthIterative(root)}`);

@@ -262,7 +262,10 @@ root.right.left.right = new TreeNode(7);
 // console.log(`Min Depth : ${minDepth.minDepthIterative(root)}`);
 
 //Same Tree
+// const isSameTree = require("./leetcode/SameTree_100");
+// console.log(`Is Same Tree : ${isSameTree(root, root)}`);
 
-const isSameTree = require("./leetcode/SameTree_100");
-console.log(`Is Same Tree : ${isSameTree(root, root)}`);
+//Sub Tree
+const isSubTree = require("./leetcode/SubTree_572");
+console.log(`Is Sub Tree : ${isSubTree(root, root)}`);
 

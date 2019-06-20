@@ -257,6 +257,12 @@ root.right.left.right = new TreeNode(7);
 
 
 // Min Depth
-const minDepth = require("./leetcode/TreeMinDepth_111");
-console.log(`Min Depth : ${minDepth.minDepthRecurrsive(root)}`);
-console.log(`Min Depth : ${minDepth.minDepthIterative(root)}`);
+// const minDepth = require("./leetcode/TreeMinDepth_111");
+// console.log(`Min Depth : ${minDepth.minDepthRecurrsive(root)}`);
+// console.log(`Min Depth : ${minDepth.minDepthIterative(root)}`);
+
+//Same Tree
+
+const isSameTree = require("./leetcode/SameTree_100");
+console.log(`Is Same Tree : ${isSameTree(root, root)}`);
+

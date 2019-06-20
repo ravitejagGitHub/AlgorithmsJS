@@ -265,7 +265,21 @@ root.right.left.right = new TreeNode(7);
 // const isSameTree = require("./leetcode/SameTree_100");
 // console.log(`Is Same Tree : ${isSameTree(root, root)}`);
 
-//Sub Tree
-const isSubTree = require("./leetcode/SubTree_572");
-console.log(`Is Sub Tree : ${isSubTree(root, root)}`);
+// //Sub Tree
+// const isSubTree = require("./leetcode/SubTree_572");
+// console.log(`Is Sub Tree : ${isSubTree(root, root)}`);
+
+
+//Symetric Tree
+
+root = new TreeNode(1);
+root.left = new TreeNode(2);
+root.left.left = new TreeNode(4);
+root.left.right = new TreeNode(5);
+root.right = new TreeNode(2);
+root.right.left = new TreeNode(5);
+root.right.right = new TreeNode(4);
+
+const isSymetricTree = require("./leetcode/TreeSymmetric_101");
+console.log(`Is Symetric Tree : ${isSymetricTree(root)}`);
 

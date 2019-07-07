@@ -289,7 +289,15 @@ root.right.left.right = new TreeNode(7);
 // const MinimumSlidingWindowSubstring = require("./leetcode/MinimumSlidingWindowSubstring_76");
 // console.log(MinimumSlidingWindowSubstring("ADOBECODEBANC", "ABC"));
 
-const lowestCommonAncestor = require("./leetcode/TreeLowestCommonAncestor_236");
-console.log(lowestCommonAncestor(root,root.left.left,root.left.right.right).val); //1,4,9
-console.log(lowestCommonAncestor(root,root.left.right.left,root.right.left).val); //1,8,6
+// const lowestCommonAncestor = require("./leetcode/TreeLowestCommonAncestor_236");
+// console.log(lowestCommonAncestor(root,root.left.left,root.left.right.right).val); //1,4,9
+// console.log(lowestCommonAncestor(root,root.left.right.left,root.right.left).val); //1,8,6
 
+const rotate = require("./leetcode/RotateImage_48");
+let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+console.table(matrix);
+console.table(rotate(matrix));
+
+matrix = [[5, 1, 9, 11], [2, 4, 8, 10], [13, 3, 6, 7], [15, 14, 12, 16]];
+console.table(matrix);
+console.table(rotate(matrix));

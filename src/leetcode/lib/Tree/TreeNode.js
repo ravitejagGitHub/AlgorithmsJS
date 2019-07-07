@@ -3,5 +3,6 @@ module.exports = class TreeNode {
     this.val = value;
     this.left = null;
     this.right = null;
+    this.next = null;
   }
 };

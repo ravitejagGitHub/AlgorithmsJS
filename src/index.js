@@ -179,7 +179,6 @@
 // let result = groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
 // console.log(result);
 
-
 // const LargestNumber = require("./leetcode/LargestNumberFormedFromArrayElements");
 // console.log(LargestNumber(["98", "95", "889", "99996", "9","99","991"]));
 
@@ -191,7 +190,7 @@
 // console.log(isP);
 
 //-------------------------------- Tree ------------------------------------------
-//Tree Traversal - 
+//Tree Traversal -
 /*
             1
         /       \
@@ -213,7 +212,6 @@ root.right = new TreeNode(3);
 root.right.left = new TreeNode(6);
 root.right.left.right = new TreeNode(7);
 
-
 //Pre Order.
 // const InOrder = require("./leetcode/TreeTraversalsInOrder_94");
 // let order = InOrder.inorderTraversal(root);
@@ -221,14 +219,12 @@ root.right.left.right = new TreeNode(7);
 // order = InOrder.inOrderRecursive(root);
 // console.log(order.join("->"));
 
-
 // //InOrder
 // const PreOrder = require("./leetcode/TreeTraversalsPreOrder_144");
 // let order = PreOrder.preOrderTraversal(root);
 // console.log(order.join("->"));
 // order = PreOrder.preOrderRecursive(root);
 // console.log(order.join("->"));
-
 
 //postOrder
 // const PostOrder = require("./leetcode/TreeTraversalsPostOrder_145");
@@ -238,7 +234,6 @@ root.right.left.right = new TreeNode(7);
 // console.log(order.join("->"));
 // order = PostOrder.postOrderUsingWithQueue(root);
 // console.log(order.join("->"));
-
 
 //level order
 // const LevelOrder = require("./leetcode/TreeTraversalLevelOrder_102");
@@ -255,7 +250,6 @@ root.right.left.right = new TreeNode(7);
 // console.log(`Max Depth : ${maxDepth.maxDepthRecurrsive(root)}`);
 // console.log(`Max Depth : ${maxDepth.maxDepthIterative(root)}`);
 
-
 // Min Depth
 // const minDepth = require("./leetcode/TreeMinDepth_111");
 // console.log(`Min Depth : ${minDepth.minDepthRecurrsive(root)}`);
@@ -269,17 +263,33 @@ root.right.left.right = new TreeNode(7);
 // const isSubTree = require("./leetcode/SubTree_572");
 // console.log(`Is Sub Tree : ${isSubTree(root, root)}`);
 
-
 //Symetric Tree
 
-root = new TreeNode(1);
-root.left = new TreeNode(2);
-root.left.left = new TreeNode(4);
-root.left.right = new TreeNode(5);
-root.right = new TreeNode(2);
-root.right.left = new TreeNode(5);
-root.right.right = new TreeNode(4);
+// root = new TreeNode(1);
+// root.left = new TreeNode(2);
+// root.left.left = new TreeNode(4);
+// root.left.right = new TreeNode(5);
+// root.right = new TreeNode(2);
+// root.right.left = new TreeNode(5);
+// root.right.right = new TreeNode(4);
 
-const isSymetricTree = require("./leetcode/TreeSymmetric_101");
-console.log(`Is Symetric Tree : ${isSymetricTree(root)}`);
+// const isSymetricTree = require("./leetcode/TreeSymmetric_101");
+// console.log(`Is Symetric Tree : ${isSymetricTree(root)}`);
+// const ClimbingStairs =  require("./leetcode/DynamicProgram/ClimbingStairs_70");
+// console.log(ClimbingStairs.climbStairs_DP(45));
+// console.log(ClimbingStairs.climbStairs(2));
+
+// const maximumSwap =  require("./leetcode/maximumSwap_670");
+// console.log(maximumSwap(98368));
+
+// const PopulatingNextLevelChild =  require("./leetcode/PopulatingNextLevelChild_116");
+// let r = PopulatingNextLevelChild(root);
+// console.table(r);
+
+// const MinimumSlidingWindowSubstring = require("./leetcode/MinimumSlidingWindowSubstring_76");
+// console.log(MinimumSlidingWindowSubstring("ADOBECODEBANC", "ABC"));
+
+const lowestCommonAncestor = require("./leetcode/TreeLowestCommonAncestor_236");
+console.log(lowestCommonAncestor(root,root.left.left,root.left.right.right).val); //1,4,9
+console.log(lowestCommonAncestor(root,root.left.right.left,root.right.left).val); //1,8,6
 

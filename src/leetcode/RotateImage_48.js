@@ -60,8 +60,8 @@ var rotate = function(matrix) {
   }
   //swap symetric positions
   for (let i = 0; i < n; i++) {
-    for (let j = i+1; j < n; j++) {
-        swap(matrix, i, j, j, i);
+    for (let j = i + 1; j < n; j++) {
+      swap(matrix, i, j, j, i);
     }
   }
   return matrix;

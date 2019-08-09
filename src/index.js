@@ -201,16 +201,16 @@
        8      9   7
 
 */
-const TreeNode = require("./leetcode/lib/Tree/TreeNode");
-let root = new TreeNode(1);
-root.left = new TreeNode(2);
-root.left.left = new TreeNode(4);
-root.left.right = new TreeNode(5);
-root.left.right.left = new TreeNode(8);
-root.left.right.right = new TreeNode(9);
-root.right = new TreeNode(3);
-root.right.left = new TreeNode(6);
-root.right.left.right = new TreeNode(7);
+// const TreeNode = require("./leetcode/lib/Tree/TreeNode");
+// let root = new TreeNode(1);
+// root.left = new TreeNode(2);
+// root.left.left = new TreeNode(4);
+// root.left.right = new TreeNode(5);
+// root.left.right.left = new TreeNode(8);
+// root.left.right.right = new TreeNode(9);
+// root.right = new TreeNode(3);
+// root.right.left = new TreeNode(6);
+// root.right.left.right = new TreeNode(7);
 
 //Pre Order.
 // const InOrder = require("./leetcode/TreeTraversalsInOrder_94");
@@ -293,11 +293,76 @@ root.right.left.right = new TreeNode(7);
 // console.log(lowestCommonAncestor(root,root.left.left,root.left.right.right).val); //1,4,9
 // console.log(lowestCommonAncestor(root,root.left.right.left,root.right.left).val); //1,8,6
 
-const rotate = require("./leetcode/RotateImage_48");
-let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-console.table(matrix);
-console.table(rotate(matrix));
+// const rotate = require("./leetcode/RotateImage_48");
+// let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+// console.table(matrix);
+// console.table(rotate(matrix));
 
-matrix = [[5, 1, 9, 11], [2, 4, 8, 10], [13, 3, 6, 7], [15, 14, 12, 16]];
-console.table(matrix);
-console.table(rotate(matrix));
+// matrix = [[5, 1, 9, 11], [2, 4, 8, 10], [13, 3, 6, 7], [15, 14, 12, 16]];
+// console.table(matrix);
+// console.table(rotate(matrix));
+
+// const reverseString = require("./leetcode/ReverseString");
+// console.log(reverseString("raviteja giduturi"));
+
+// const FindPairsWithEqualSum = require("./leetcode/FindPairsWithEqualSum");
+// console.log(FindPairsWithEqualSum([9, 4, 3, 1, 7, 12]));
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/**
+ * http://thatjsdude.com/interview/js1.html
+ */
+
+//  const isPrime = require("./jsAlgorithms/isPrime");
+//  console.log(isPrime(166));
+
+//  const primefactors = require("./jsAlgorithms/primeFactors");
+//  console.log(primefactors(16678));
+
+// const fibonacci = require("./jsAlgorithms/fibonacci");
+//  console.log(fibonacci(124));
+
+// const greatestCommonDivision = require("./jsAlgorithms/greatestCommonDivision");
+//  console.log(greatestCommonDivision(14, 21));
+//  console.log(greatestCommonDivision(69, 169));
+
+// const removeDumplicates = require("./jsAlgorithms/removeDumplicates");
+// console.log(removeDumplicates([1,3,3,3,1,5,6,7,8,1]));
+
+// const merge2SortedArrays = require("./jsAlgorithms/merge2SortedArrays");
+// console.log(
+//   merge2SortedArrays(
+//     [2, 5, 6, 9, 11, 45, 60, 70, 80, 90, 123],
+//     [1, 2, 3, 29, 32, 38, 40]
+//   )
+// );
+
+// const swap2nums = require("./jsAlgorithms/swap2nums");
+// swap2nums();
+
+// const strReverse = require("./jsAlgorithms/string-reverse");
+// console.log(strReverse("this is the string."));
+
+// const countzeros = require("./jsAlgorithms/count-zeros");
+// console.log(countzeros(3000));
+
+// const substring = require("./jsAlgorithms/substring");
+// console.log(substring("raviteja", "teja"));
+// console.log(substring("abbcdabbbbbck", "ab"));
+// console.log(substring("abbcdabbbbbck", "bck"));
+// console.log(substring("raviteja", "teja"));
+
+
+// const lcs = require("./leetcode/DynamicProgram/LongestCommonSubstring");
+// lcs("ABCBDDAF","ACBDF");
+
+// const lcs = require("./leetcode/DynamicProgram/longestCommonSubsequence_1143");
+// lcs("ABCDAF","ACBDF");
+
+
+// const editDistance = require("./leetcode/DynamicProgram/EditDistance_72");
+// editDistance("intention","execution");
+
+const zigZagArray = require("./leetcode/zigZagArray_1144");
+zigZagArray([9,6,1,6,2]);
+zigZagArray([2,1,2]);

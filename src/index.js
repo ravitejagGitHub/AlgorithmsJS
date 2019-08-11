@@ -191,16 +191,16 @@
 
 //-------------------------------- Tree ------------------------------------------
 //Tree Traversal -
-/*
-            1
-        /       \
-       2          3
-      / \       / 
-    4     5    6
-        /   \   \
-       8      9   7
+// /*
+//             1
+//         /       \
+//        2          3
+//       / \       / 
+//     4     5    6
+//         /   \   \
+//        8      9   7
 
-*/
+// */
 // const TreeNode = require("./leetcode/lib/Tree/TreeNode");
 // let root = new TreeNode(1);
 // root.left = new TreeNode(2);
@@ -363,6 +363,42 @@
 // const editDistance = require("./leetcode/DynamicProgram/EditDistance_72");
 // editDistance("intention","execution");
 
-const zigZagArray = require("./leetcode/zigZagArray_1144");
-zigZagArray([9,6,1,6,2]);
-zigZagArray([2,1,2]);
+// const zigZagArray = require("./leetcode/zigZagArray_1144");
+// zigZagArray([9,6,1,6,2]);
+// zigZagArray([2,1,2]);
+
+
+// var SnapshotArray = require("./leetcode/SnapshotArray__1146");
+// var obj =  new SnapshotArray(3);
+// obj.set(0,2);
+// console.log(obj.snap());
+// obj.set(0,22);
+// console.log(obj.snap());
+// obj.set(0,333);
+// console.log(obj.get(0,1));
+// console.log(obj.get(0,2));
+// console.log(obj.get(0,0));
+
+//BTree color GameWinning
+/*
+            1
+        /       \
+       2          3
+      / \        
+    4     5   
+
+*/
+// const TreeNode = require("./leetcode/lib/Tree/TreeNode");
+// let root = new TreeNode(6);
+// root.left = new TreeNode(3);
+// root.left.left = new TreeNode(7);
+// root.left.right = new TreeNode(4);
+// root.left.right.right = new TreeNode(2);
+// root.left.right.right.right = new TreeNode(1);
+// root.left.right.right.right.right = new TreeNode(5);
+
+// const btreeColorGameWinning = require("./leetcode/BTreeColorGameWinningMove_1145");
+// console.log(btreeColorGameWinning(root, 7, 3));
+
+let SuperUglyNumber = require("./leetcode/SuperUglyNumber_313");
+console.log(SuperUglyNumber(12, [2,3,5]));

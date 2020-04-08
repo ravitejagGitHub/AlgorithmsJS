@@ -20,4 +20,6 @@ const middleNode = function(head) {
   return slowPointer;
 };
 
+
+
 module.exports = middleNode;

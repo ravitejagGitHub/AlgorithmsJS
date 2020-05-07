@@ -400,5 +400,7 @@
 // const btreeColorGameWinning = require("./leetcode/BTreeColorGameWinningMove_1145");
 // console.log(btreeColorGameWinning(root, 7, 3));
 
-let SuperUglyNumber = require("./leetcode/SuperUglyNumber_313");
-console.log(SuperUglyNumber(12, [2,3,5]));
+// let SuperUglyNumber = require("./leetcode/SuperUglyNumber_313");
+// console.log(SuperUglyNumber(12, [2,3,5]));
+
+require("./leetcode/MayChallenge/W1/6.isCousins_993");

@@ -1,17 +1,24 @@
 export class TreeNode<T> {
-    private _value: T;
+    private _val: T;
     private _left: any = null;
     private _right: any = null;
 
-    set value(value: T) {
-        this._value = value;
+    set val(val: T) {
+        this._val = val;
     }
-    get value(): T {
-        return this._value;
+    get val(): T {
+        return this._val;
     }
 
-    constructor(value: T) {
-        this._value = value;
+    get left(): TreeNode<T> {
+        return this._left;
+    }
+    get right(): TreeNode<T> {
+        return this._right;
+    }
+
+    constructor(val: T) {
+        this._val = val;
     }
 
     addLeftNode(node: TreeNode<T>) {
@@ -29,7 +36,7 @@ export class TreeNode<T> {
     printNode() {
         console.log(`
         -------------------
-        |  ${this._left?._value || 'N'}  |  ${this._value}  |  ${this._right?._value || 'N'}  |
+        |  ${this._left?._val || 'N'}  |  ${this._val}  |  ${this._right?._val || 'N'}  |
         -------------------     
         `)
     }

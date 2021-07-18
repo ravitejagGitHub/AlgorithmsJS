@@ -1,2 +1,2 @@
-const username: string = "Raviteja Giduturi";
-console.log(`Hello ${username}`);
+import { Tree, printGUI } from './lib/Tree';
+printGUI();

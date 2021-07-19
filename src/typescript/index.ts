@@ -1,3 +1,4 @@
-import { Tree } from "./lib/Tree";
-import { inOrder, postOrder, preOrder } from "./MicroSoftPrep/Tree";
-console.log(postOrder(Tree));
+import { printGUI, Tree } from "./lib/Tree";
+import { inOrder, levelOrder, postOrder, preOrder } from "./MicroSoftPrep/Tree";
+printGUI()
+console.log(levelOrder(Tree));

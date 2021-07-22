@@ -1,5 +1,4 @@
 import { printGUI, Tree } from "./lib/Tree";
-import { inOrder, levelOrder, levelOrder2, postOrder, preOrder } from "./MicroSoftPrep/Tree";
+import { inOrder, levelOrder, levelOrder2, postOrder, preOrder, zigZagLevelOrder } from "./MicroSoftPrep/Tree";
 printGUI()
-console.log(levelOrder(Tree));
-console.log(levelOrder2(Tree));
+console.log(zigZagLevelOrder(Tree));

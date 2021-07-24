@@ -21,10 +21,10 @@ const longestUniqueSubString = function (inputString) {
     }
 
     if(i-currentIndex > maxLength) {
-        maxLength = i-currentIndex
+        maxLength = i - currentIndex;
         startIndex = currentIndex;
     }
     return inputString.substr(startIndex, maxLength);
-}
+};
 
 module.exports = longestUniqueSubString;

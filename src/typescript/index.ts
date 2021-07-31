@@ -7,6 +7,7 @@ import { removeDuplicates } from "./MicroSoftPrep/Arrays/RemoveDuplicatesfromSor
 import { subarraySum } from "./MicroSoftPrep/Arrays/SubarraySumEqualsK_560";
 import { findDuplicate } from "./MicroSoftPrep/FindDuplicateNumber_287";
 import { mergeTwoLists } from "./MicroSoftPrep/LinkedList/MergeSortedList_21";
+import { firstUniqChar } from "./MicroSoftPrep/strings/FirstUniqueCharacter_387";
 import { lengthOfLongestSubstring } from "./MicroSoftPrep/strings/LongSubString_3";
 import { reversString, reversString2 } from "./MicroSoftPrep/strings/revers";
 import { isValid } from "./MicroSoftPrep/strings/ValidParentheses_20";
@@ -32,4 +33,4 @@ import { rightView } from "./MicroSoftPrep/Tree/RightView";
 // console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
 
 printGUI();
-console.log(preorderTraversal2(Tree))
+console.log(firstUniqChar("leetcode"))

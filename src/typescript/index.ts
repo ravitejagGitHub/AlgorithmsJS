@@ -12,6 +12,7 @@ import { reversString, reversString2 } from "./MicroSoftPrep/strings/revers";
 import { isValid } from "./MicroSoftPrep/strings/ValidParentheses_20";
 import {  inorderTraversal, levelOrder, levelOrder2, postOrder, preOrder, zigZagLevelOrder } from "./MicroSoftPrep/Tree";
 import { postorderTraversal2 } from "./MicroSoftPrep/Tree/BinaryTreePostorder_145";
+import { preorderTraversal2 } from "./MicroSoftPrep/Tree/BinaryTreePreorder_144";
 import { leftView } from "./MicroSoftPrep/Tree/LeftView";
 import { rightView } from "./MicroSoftPrep/Tree/RightView";
 
@@ -31,4 +32,4 @@ import { rightView } from "./MicroSoftPrep/Tree/RightView";
 // console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
 
 printGUI();
-console.log(postorderTraversal2(Tree))
+console.log(preorderTraversal2(Tree))

@@ -46,7 +46,7 @@ export function findDuplicate2(nums: number[]): number {
    do  {
      slowPointer = nums[slowPointer];
      fastPointer = nums[nums[fastPointer]];
-  } while(slowPointer !== fastPointer)
+   } while(slowPointer !== fastPointer)
   
    fastPointer = nums[0];
    while (slowPointer !== fastPointer) {

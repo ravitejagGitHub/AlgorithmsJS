@@ -1,31 +1,34 @@
-import { Node } from "./node";
+import { ListNode } from "./node";
 
 
-export const createSingleLinkedList = function(arr:  number[], head: null | Node = null, i = 0) {
+export const createSingleLinkedList = function(arr:  number[], head: null | ListNode = null, i = 0) {
   if (i < arr.length) {
-    head = new Node(arr[i]);
+    head = new ListNode(arr[i]);
     head.next = createSingleLinkedList(arr, head.next, ++i);
   }
   return head;
 };
 
-const print = function(node: Node | null, output: number[] = []) {
+export const print = function(node: ListNode | null, output: number[] = []) {
   if (node !== null) {
     output.push(node.val);
     if (node.next) {
       print(node.next, output);
+    } else {
+      console.log(output.join("->"));
     }
   }
+  
   return output.join("->");
 };
 
 export class LinkedList {
-  datalist: null | Node;
+  datalist: null | ListNode;
   constructor(arr: number[]) {
     this.datalist = createSingleLinkedList(arr);
   }
 
-  list() : Node | null {
+  list() : ListNode | null {
     return this.datalist;
   }
 
@@ -33,11 +36,15 @@ export class LinkedList {
     console.log(print(this.datalist));
   }
 
-  lastNode(): Node | null {
+  lastNode(): ListNode | null {
     let n = this.datalist;
     while (n!= null && n.next !== null) {
       n = n.next;
     }
     return n;
+  }
+
+  head(): ListNode | null {
+    return this.datalist;
   }
 }

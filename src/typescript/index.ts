@@ -1,9 +1,10 @@
-import { LinkedList } from "./lib/linked-list/single-linked-list";
-import { printGUI, Tree } from "./lib/Tree";
+import { LinkedList, print } from "./lib/linked-list";
+import { printGUI, printTree, Tree } from "./lib/Tree";
 import { twoSum } from "./MicroSoftPrep/2Sum_1";
 import { mergeSortedArray } from "./MicroSoftPrep/Arrays/MergeSortedArrays";
 import { subarraySum } from "./MicroSoftPrep/Arrays/SubarraySumEqualsK_560";
 import { findDuplicate } from "./MicroSoftPrep/FindDuplicateNumber_287";
+import { mergeTwoLists } from "./MicroSoftPrep/LinkedList/MergeSortedList_21";
 import { lengthOfLongestSubstring } from "./MicroSoftPrep/strings/LongSubString_3";
 import { reversString, reversString2 } from "./MicroSoftPrep/strings/revers";
 import { isValid } from "./MicroSoftPrep/strings/ValidParentheses_20";
@@ -20,5 +21,6 @@ import { rightView } from "./MicroSoftPrep/Tree/RightView";
 
 // console.log(mergeSortedArray([1,4,6,7,12,18,30],[2,3,5,6,8,14,19]));
 
-new LinkedList([1, 2, 3]).print()
-new LinkedList([11, 12, 13]).print()
+let l1 = new LinkedList([1, 2, 3])
+let l2 = new LinkedList([11, 12, 13])
+print(mergeTwoLists(l1.head(), l2.head()));

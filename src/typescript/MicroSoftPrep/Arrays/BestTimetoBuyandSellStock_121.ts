@@ -1,4 +1,4 @@
-function maxProfit1(prices: number[]): number {
+function maxProfit1_1(prices: number[]): number {
     let maxProfit = 0;
     let cur_profit;
     for (let i = 0; i < prices.length - 1; i++) {
@@ -12,8 +12,8 @@ function maxProfit1(prices: number[]): number {
     return maxProfit;
 };
 
-function maxProfit(prices: number[]): number {
-    let maxProfit = 0;
+function maxProfit1(prices: number[]): number {
+    let maxmumProfit = 0;
     let bestBuy = prices[0];
     let presentPrice, presentProfit;
     for (let i = 1; i < prices.length; i++) {
@@ -22,10 +22,10 @@ function maxProfit(prices: number[]): number {
             bestBuy = presentPrice
         } else {
             presentProfit = presentPrice - bestBuy;
-            if (presentProfit  > maxProfit) {
-                maxProfit = presentProfit;
+            if (presentProfit  > maxmumProfit) {
+                maxmumProfit = presentProfit;
             }
         }
     }
-    return maxProfit;
+    return maxmumProfit;
 };

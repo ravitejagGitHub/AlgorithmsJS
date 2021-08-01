@@ -38,4 +38,5 @@ import { rightView } from "./MicroSoftPrep/Tree/RightView";
 // console.log(isAnagram("abc", "key"))
 
 let l1 = new LinkedList([1, 2])
-console.log(isPalindrome(l1.datalist));
+//console.log(isPalindrome(l1.datalist));
+//console.log(isPalindrome(l1.datalist));

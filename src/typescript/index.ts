@@ -6,6 +6,7 @@ import { mergeSortedArray } from "./MicroSoftPrep/Arrays/MergeSortedArrays";
 import { removeDuplicates } from "./MicroSoftPrep/Arrays/RemoveDuplicatesfromSortedArray_26";
 import { subarraySum } from "./MicroSoftPrep/Arrays/SubarraySumEqualsK_560";
 import { findDuplicate } from "./MicroSoftPrep/FindDuplicateNumber_287";
+import { isPalindrome } from "./MicroSoftPrep/LinkedList/isPalindrome_234";
 import { mergeTwoLists } from "./MicroSoftPrep/LinkedList/MergeSortedList_21";
 import { firstUniqChar } from "./MicroSoftPrep/strings/FirstUniqueCharacter_387";
 import { lengthOfLongestSubstring } from "./MicroSoftPrep/strings/LongSubString_3";
@@ -35,4 +36,7 @@ import { rightView } from "./MicroSoftPrep/Tree/RightView";
 
 // printGUI();
 //console.log(firstUniqChar("leetcode"))
-console.log(isAnagram("abc", "key"))
+// console.log(isAnagram("abc", "key"))
+
+let l1 = new LinkedList([1, 2])
+console.log(isPalindrome(l1.datalist));

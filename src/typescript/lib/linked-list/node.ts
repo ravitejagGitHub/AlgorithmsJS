@@ -1,7 +1,7 @@
 export class ListNode {
     val: number;
     next: null | ListNode;
-    constructor(protected value: number){
+    constructor(value: number){
         this.val = value;
         this.next = null;
     }

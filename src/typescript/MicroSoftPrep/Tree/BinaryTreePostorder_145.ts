@@ -1,4 +1,4 @@
-import { TreeNode } from "./NumberTreeNode";
+import { TreeNode } from "../../lib/Tree/NumberTreeNode";
 
 export function postorderTraversal2(root: TreeNode | null, postOrderArray: number[]= []): number[] {
     if(root !== null) {

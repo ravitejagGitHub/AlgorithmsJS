@@ -1,4 +1,4 @@
-import { TreeNode } from "./NumberTreeNode";
+import { TreeNode } from "../../lib/Tree/NumberTreeNode";
 
 
 export function zigZagLevelOrder(root: TreeNode): number[][] {

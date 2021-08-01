@@ -1,4 +1,4 @@
-import { TreeNode } from "../Tree/NumberTreeNode";
+import { TreeNode } from "../../lib/Tree/NumberTreeNode";
 import { rightView } from "../Tree/RightView";
 
 function isSymmetric(root: TreeNode | null): boolean {

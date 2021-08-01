@@ -1,4 +1,4 @@
-import { TreeNode } from "./NumberTreeNode";
+import { TreeNode } from "../../lib/Tree/NumberTreeNode";
 
 export function inorderTraversal2(root: TreeNode | null, inOrderArray: number[]= []): number[] {
     if(root !== null) {

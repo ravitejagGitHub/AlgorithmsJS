@@ -10,6 +10,7 @@ import { mergeTwoLists } from "./MicroSoftPrep/LinkedList/MergeSortedList_21";
 import { firstUniqChar } from "./MicroSoftPrep/strings/FirstUniqueCharacter_387";
 import { lengthOfLongestSubstring } from "./MicroSoftPrep/strings/LongSubString_3";
 import { reversString, reversString2 } from "./MicroSoftPrep/strings/revers";
+import { isAnagram } from "./MicroSoftPrep/strings/ValidAnagram_242";
 import { isValid } from "./MicroSoftPrep/strings/ValidParentheses_20";
 import {  inorderTraversal, levelOrder, levelOrder2, postOrder, preOrder, zigZagLevelOrder } from "./MicroSoftPrep/Tree";
 import { postorderTraversal2 } from "./MicroSoftPrep/Tree/BinaryTreePostorder_145";
@@ -32,5 +33,6 @@ import { rightView } from "./MicroSoftPrep/Tree/RightView";
 
 // console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
 
-printGUI();
-console.log(firstUniqChar("leetcode"))
+// printGUI();
+//console.log(firstUniqChar("leetcode"))
+console.log(isAnagram("abc", "key"))

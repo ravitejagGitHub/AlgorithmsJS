@@ -1,5 +1,4 @@
 import { LinkedList, print } from "./lib/linked-list";
-import { printGUI, printTree, Tree } from "./lib/Tree";
 import { twoSum } from "./MicroSoftPrep/Arrays/2Sum_1";
 import { maxSubArray } from "./MicroSoftPrep/Arrays/MaximumSubarray_56";
 import { mergeSortedArray } from "./MicroSoftPrep/Arrays/MergeSortedArrays";

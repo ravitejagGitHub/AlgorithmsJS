@@ -8,6 +8,7 @@ import { isPalindrome } from "./MicroSoftPrep/LinkedList/isPalindrome_234";
 import { mergeTwoLists } from "./MicroSoftPrep/LinkedList/MergeSortedList_21";
 import { findTheDifference } from "./MicroSoftPrep/strings/FindTheDifference_389";
 import { firstUniqChar } from "./MicroSoftPrep/strings/FirstUniqueCharacter_387";
+import { isSubsequence } from "./MicroSoftPrep/strings/IsSubsequence_392";
 import { lengthOfLongestSubstring } from "./MicroSoftPrep/strings/LongSubString_3";
 import { reversString, reversString2 } from "./MicroSoftPrep/strings/revers";
 import { isAnagram } from "./MicroSoftPrep/strings/ValidAnagram_242";
@@ -41,4 +42,5 @@ let l1 = new LinkedList([1, 2])
 //console.log(isPalindrome(l1.datalist));
 //console.log(isPalindrome(l1.datalist));
 
-console.log(findTheDifference("abc", "abda"));
+// console.log(findTheDifference("abc", "abda"));
+console.log(isSubsequence("axc", "ahbgdc"));

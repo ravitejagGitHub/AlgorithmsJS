@@ -6,6 +6,7 @@ import { removeDuplicates } from "./MicroSoftPrep/Arrays/RemoveDuplicatesfromSor
 import { subarraySum } from "./MicroSoftPrep/Arrays/SubarraySumEqualsK_560";
 import { isPalindrome } from "./MicroSoftPrep/LinkedList/isPalindrome_234";
 import { mergeTwoLists } from "./MicroSoftPrep/LinkedList/MergeSortedList_21";
+import { findTheDifference } from "./MicroSoftPrep/strings/FindTheDifference_389";
 import { firstUniqChar } from "./MicroSoftPrep/strings/FirstUniqueCharacter_387";
 import { lengthOfLongestSubstring } from "./MicroSoftPrep/strings/LongSubString_3";
 import { reversString, reversString2 } from "./MicroSoftPrep/strings/revers";
@@ -39,3 +40,5 @@ import { rightView } from "./MicroSoftPrep/Tree/RightView";
 let l1 = new LinkedList([1, 2])
 //console.log(isPalindrome(l1.datalist));
 //console.log(isPalindrome(l1.datalist));
+
+console.log(findTheDifference("abc", "abda"));
